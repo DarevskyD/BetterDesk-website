@@ -1,0 +1,25 @@
+.navigation__links {
+    display: flex;    
+    justify-content: space-between;    
+}
+
+.navigation__link { 
+    @include font (1.4rem, 1.4rem, normal);
+    color: $color-light;
+    padding-left: 25px;
+    
+    &:first-child {
+        padding-left: 0;
+    }
+   
+
+    >* {
+        color: $color-light;
+        opacity: 0.5;
+
+        &:hover {
+            opacity: 1;
+            @extend %transition;
+        }
+    }
+}

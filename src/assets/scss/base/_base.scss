@@ -1,0 +1,46 @@
+html {
+    font-size: $main-size;
+    color: $color-font-main;
+}
+
+body {
+    @extend %font-prim-regular;
+    @include font (1.6rem, 2.6rem, normal);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1 {
+    @extend %font-prim-regular;
+    @include font (4.8rem, 5.4rem, normal);
+
+}
+
+h2 {
+    @extend %font-prim-regular;
+    @include font (4.0rem, 4.9rem, normal);
+}
+
+h3 {
+    @extend %font-prim-regular;
+    @include font (3.2rem, 4.4rem, normal);
+}
+
+h4 {}
+
+h5 {}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

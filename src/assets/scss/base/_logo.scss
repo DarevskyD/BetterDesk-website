@@ -1,0 +1,11 @@
+.logo {
+    padding: 0 10px 0 0;
+    @include font(1.6rem, 1.4rem, normal);
+}
+.text-logo {
+    @include font(1.6rem, 1.6rem, normal);
+    @extend %font-add-regular;
+    color: #ffffff;
+    margin: 0;
+    cursor: pointer;
+}

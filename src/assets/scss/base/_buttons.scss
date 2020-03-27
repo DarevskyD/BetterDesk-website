@@ -1,0 +1,14 @@
+.button {
+    padding: 12px 20px;
+    @include font(1.4rem, 1.4rem, normal); 
+    @extend %font-prim-regular;    
+    border-radius: 4px;
+    cursor: pointer;
+    @extend %transition;
+    background: $color-backgroundfirst;
+    border: 1px solid #979797;
+    color: #ffffff;
+    opacity: 0.5;    
+}
+
+
