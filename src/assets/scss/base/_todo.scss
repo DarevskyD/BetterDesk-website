@@ -1,0 +1,79 @@
+.todo__footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    background: $color-todo-footer;
+    padding: 15px 35px;
+}
+
+.todo__line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo__title {
+    @extend %font-add-regular;
+    @include font(2.0rem, 2.7rem, normal);
+    color: $color-text;
+}
+
+.todo__background {
+    width: 51px;
+    height: 32px;
+    border-radius: 40px;
+    background: $color-todo;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 0 10px;
+
+    .todo__quantity {
+        color: $color-light;
+    }
+}
+
+.todo__content {
+    max-height: 391px;
+    background: $color-light;
+    border-radius: 0 0 8px 8px;
+    padding: 28px 12px 38px 34px;
+    overflow-y: scroll;
+    @extend %custom-scroll;
+}
+
+.todo__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 0 25px;
+
+    .square {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        border: 2px solid $color-todo;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.task {
+    display: flex;
+    flex-direction: column;
+}
+
+.task__date {
+    @extend %font-add-regular;
+    @include font(1.5rem, 2.5rem);
+    font-weight: 300;
+    color: $color-add;
+}
+
+.task__text {
+    @extend %font-add-regular;
+    @include font(1.6rem, 2.2rem, normal);
+    color: $color-task;
+}

@@ -1,0 +1,22 @@
+.about-us__title {
+    text-align: center;
+    padding: 51px 0 69px;
+}
+
+.work {
+    text-align: center;
+}
+
+.work__image {
+    margin: 0 0 31px;
+}
+
+.work-container {
+    padding: 0 0 81px;
+}
+
+.work__content {    
+    @include font(1.8rem, 2.2rem, normal);
+    padding: 0 40px;
+    margin: 0 0 25px;
+}

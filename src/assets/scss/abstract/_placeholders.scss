@@ -34,7 +34,7 @@
 
 %custom-scroll {
     &::-webkit-scrollbar {
-        width: 5px;
+        width: 7px;        
     }
 
     &::-webkit-scrollbar-track {
@@ -42,7 +42,12 @@
     }
 
     &::-webkit-scrollbar-thumb {
-        background: #7752BE;
-        border-radius: 10px;
+        background: $color-border-new;
+        border-radius: 5px;
+
+        &:hover {
+            background: $color-border;
+            @extend %transition;
+        }
     }
 }

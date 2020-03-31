@@ -30,7 +30,10 @@ h3 {
     @include font (3.2rem, 4.4rem, normal);
 }
 
-h4 {}
+h4 {
+    @extend %font-prim-regular;
+    @include font (2.0rem, 3.0rem, normal);
+}
 
 h5 {}
 

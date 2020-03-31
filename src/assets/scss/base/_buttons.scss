@@ -1,14 +1,34 @@
 .button {
     padding: 12px 20px;
-    @include font(1.4rem, 1.4rem, normal); 
-    @extend %font-prim-regular;    
+    @include font(1.4rem, 1.4rem, normal);
+    @extend %font-prim-regular;
     border-radius: 4px;
     cursor: pointer;
     @extend %transition;
     background: $color-backgroundfirst;
-    border: 1px solid #979797;
-    color: #ffffff;
-    opacity: 0.5;    
+    border: 1px solid $color-border;
+    color: $color-light;
+    opacity: 0.5;
 }
 
+.button__new {
+    display: flex;
+    align-items: center;
+    padding: 9px 19px;
+    background: $color-todo;
+    border: 1px solid $color-border-new;
+    border-radius: 5px;
 
+    .plus {
+        background-image: url('/assets/img/icons/add.svg');
+        width: 16px;
+        height: 16px;
+    }
+
+    .add {
+        @extend %font-add-regular;
+        @include font(1.6rem, 2.2rem, normal);
+        color: $color-light;
+        margin: 0 0 0 5px;
+    }
+}

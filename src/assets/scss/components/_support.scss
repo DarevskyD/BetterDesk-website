@@ -1,0 +1,39 @@
+.supports__container {
+    max-width: 764px;
+    margin: auto;
+    padding: 83px 0 109px;
+}
+
+.supports__title {
+    max-width: 669px;
+    margin: 0 auto 39px;
+    text-align: center;
+
+    &-bold {
+        @extend %font-prim-bold;
+        @include font(3.2rem, 4.4rem, bold);
+    }
+}
+
+.support {
+    text-align: center;
+    color: $color-add-main;
+}
+
+.support__title {
+    @extend %font-prim-light;
+    @include font(1.6rem, 2.0rem, normal, italic);
+    margin: 0 0 12px;
+}
+
+.support__text {
+    @include font(1.6rem, 2.5rem, normal);
+    color: $color-add;
+    margin: 0 0 11px;
+}
+
+.link__text {
+    cursor: pointer;
+    @include font(1.4rem, 1.7rem, normal, italic);
+    color: $color-link;
+}
