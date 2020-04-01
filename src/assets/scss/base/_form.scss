@@ -1,0 +1,25 @@
+form {
+    display: flex;
+    align-items: center;
+
+    .email__line {
+
+        input {
+            @include font(1.6rem, 2.0rem, normal);
+            @extend %font-prim-regular;
+            border-radius: 4px 0px 0px 4px;
+            padding: 16px 105px 16px 20px;
+            max-width: 302px;
+        }
+    }
+
+    .email__button {
+
+        .button-form {
+            @extend %font-prim-bold;
+            @include font(1.4rem, 1.4rem);
+            padding: 20px 30px 18px 34px;
+            border-radius: 0px 4px 4px 0px;
+        }
+    }
+}

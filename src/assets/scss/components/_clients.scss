@@ -1,0 +1,44 @@
+.wrapper__clients {
+    padding: 42px 0 40px;
+}
+
+.client {
+    display: flex;
+    align-items: center;
+}
+
+.client__photo {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    opacity: 0.6;
+
+    &:hover {
+        opacity: 1;
+        @extend %transition;
+    }
+
+    .triangle {
+        width: 22px;
+        height: 27px;
+        position: absolute;
+        top: calc((100%-27px)/2);
+        left: calc((100%-22px)/2);
+    }
+}
+
+.client__image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.client__content {
+    margin: 0 0 0 20px;
+}
+
+.client__name {
+    @include font(1.8rem, 2.2rem, normal);
+    color: $color-name;
+    margin: 0 0 12px;
+}

@@ -1,0 +1,59 @@
+.products {
+    background: $color-primary;
+}
+
+.product__form {
+    max-width: 426px;
+    margin: auto;
+}
+
+.wrapper__products {
+    max-width: 828px;
+    margin: auto;
+    padding: 80px 0 80px;
+    text-align: center;
+}
+
+.title__products {
+    color: $color-light;
+    padding: 0 0 20px;
+    margin: 0;
+}
+
+.email__product {
+
+    input {
+        background: $color-primary;
+        border: 1px solid $color-light;
+        opacity: 0.6;
+
+        &:hover {
+            box-shadow: 0px 1px 6px rgba(255, 255, 255, 0.6);
+        }
+
+        &:focus {
+            outline: none;
+            box-shadow: 0px 1px 6px rgba(255, 255, 255, 0.6);
+            background: $color-primary;
+            color: $color-light;
+            opacity: 1;
+        }
+
+        &::placeholder {
+            color: $color-light;
+        }
+    }
+}
+
+.email__button {
+
+    .button-product {
+        background: $color-light;
+        border: 1px solid $color-light;
+        color: $color-primary;
+
+        &:hover {
+            box-shadow: 0px 1px 6px rgba(34, 72, 77, 0.6);
+        }
+    }
+}
