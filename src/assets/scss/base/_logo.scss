@@ -1,7 +1,23 @@
 .logo {
     padding: 0 10px 0 0;
-    @include font(1.6rem, 1.4rem, normal);
+    @include font(1.6rem, 1.4rem, normal);    
 }
+
+.logo-path {
+    @extend %transition;
+}
+
+.logo-svg {
+    
+    cursor: pointer;
+
+    &:hover {
+        .logo-path {
+            fill: $color-backgroundfirst;
+        }       
+    }
+}
+
 .text-logo {
     @include font(1.6rem, 1.6rem, normal);
     @extend %font-add-regular;

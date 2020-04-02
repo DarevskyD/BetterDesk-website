@@ -2,6 +2,14 @@
     max-width: 764px;
     margin: auto;
     padding: 83px 0 109px;
+
+    @include media-tablet {
+        padding: 53px 0 79px;
+    }
+
+    @include media-mobile {
+        padding: 30px 0 40px;
+    }
 }
 
 .supports__title {
@@ -12,7 +20,30 @@
     &-bold {
         @extend %font-prim-bold;
         @include font(3.2rem, 4.4rem, bold);
+
+        @include media-tablet {
+            @include font (2.8rem, 3.8rem, bold);
+        }
+
+        @include media-mobile {
+            @include font (2.2rem, 3.0rem, normal);
+        }
     }
+}
+
+.support__block {
+    >* {
+        @include media-mobile {
+            flex-basis: 100%;
+            margin: 0 0 30px;
+        }
+
+        &:last-child {
+            @include media-mobile {
+                margin: 0;
+            }
+        }
+    }    
 }
 
 .support {

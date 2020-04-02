@@ -12,6 +12,10 @@
     text-align: center;
     padding: 80px 0 0;
     margin: 0 0 29px;
+
+    @include media-tablet {
+        padding: 50px 0 0;
+    }
 }
 
 .why__text {
@@ -19,10 +23,20 @@
     text-align: center;
     color: $color-light;
     margin: 0 0 60px;
+
+    @include media-mobile {
+        margin: 0 0 30px;
+    }
 }
 
 .why__container {
     padding: 0 0 90px;
+
+    @include media-tablet {
+        padding: 0 0 50px;
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .block__support {
@@ -31,6 +45,12 @@
     border-radius: 3px;
     padding: 20px 33px;
     margin: 0 0 20px;
+}
+
+.block {
+    @include media-tablet {
+        margin: 0 0 40px;
+    }
 }
 
 .block__title {

@@ -5,19 +5,27 @@
 .product__form {
     max-width: 426px;
     margin: auto;
+    padding: 0 0 80px;
+
+    @include media-tablet {
+        padding: 0 0 50px;
+    }
 }
 
 .wrapper__products {
     max-width: 828px;
     margin: auto;
-    padding: 80px 0 80px;
-    text-align: center;
+    text-align: center;   
 }
 
 .title__products {
     color: $color-light;
-    padding: 0 0 20px;
+    padding: 80px 0 20px;
     margin: 0;
+
+    @include media-tablet {
+        padding: 50px 0 20px;
+    }
 }
 
 .email__product {
@@ -45,7 +53,7 @@
     }
 }
 
-.email__button {
+.email__button {    
 
     .button-product {
         background: $color-light;

@@ -4,13 +4,13 @@
 }
 
 .wrapper__gartner {
-    padding: 40px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .content__gartner {
+    padding: 40px 0;
     max-width: 500px;
 }
 
@@ -37,10 +37,16 @@
     }
 }
 
+.gartner__image {
+    @include media-tablet {
+        margin: 0 0 0 60px;
+    }
+}
+
 .gartner-photo {
-    background: url("/assets/img/gartner/woman.jpg") no-repeat center;
+    background: url("/assets/img/gartner/woman.jpg") no-repeat;
     background-size: cover;
-    width: 100%;
+    background-position: center;
     height: auto;
 }
 
@@ -53,6 +59,10 @@
     max-width: 836px;
     padding: 392px 0 78px;
     text-align: center;
+
+    @include media-tablet {
+        padding: 180px 0 58px;
+    }
 }
 
 .gartner-photo__title {
@@ -60,13 +70,17 @@
     @extend %font-add-italic;
     color: $color-light;
     margin: 0 0 30px;
+
+    @include media-tablet {
+        @include font(3.4rem, 4.0rem, normal);
+    }
 }
 
 .gartner-photo__name {
     @include font(1.8rem, 2.5rem, normal);
     @extend %font-add-regular;
     color: $color-light;
-    margin: 0 0 40px;
+    margin: 0 0 40px;   
 }
 
 .block-play {

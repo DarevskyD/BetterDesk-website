@@ -4,7 +4,7 @@
 
 .footer__wrapper {
     max-width: 1000px;
-    padding: 72px 0 32px;
+    margin: auto;
     display: flex;
     justify-content: space-between;
 }
@@ -12,12 +12,21 @@
 .footer__container {
     display: flex;
     justify-content: space-between;
-    max-width: 800px;    
+    max-width: 800px;
+    padding: 72px 0 52px;
+
+    @include media-tablet {
+        padding: 52px 0 42px;
+    }
 }
 
 .footer__logo {
     min-width: 196px;
     margin: 0 108px 0 0;
+
+    @include media-tablet {
+        margin: 0 50px 0 0;
+    }
 }
 
 .footer__logo-line {
@@ -57,5 +66,13 @@
         @include font(1.2rem, 2.8rem, normal);
         color: $color-light;
         opacity: 0.6;
+    }
+}
+
+.foter__social {
+    padding: 72px 0 52px;
+
+    @include media-tablet {
+        padding: 52px 0 42px;
     }
 }

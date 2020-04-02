@@ -1,10 +1,26 @@
-.wrapper__clients {
+.clients__container {
     padding: 42px 0 40px;
+
+    @include media-tablet {
+        padding: 42px 0 10px;           
+    }  
+    
+    >* {         
+
+        @include media-tablet {
+            flex-basis: 48%;
+            margin: 0 0 30px;            
+        }       
+    }
 }
 
 .client {
     display: flex;
     align-items: center;
+
+    @include media-tablet {
+        justify-content: center;        
+    } 
 }
 
 .client__photo {
