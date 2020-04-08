@@ -21,6 +21,12 @@
     }
 }
 
+@mixin media-tabletpro {
+    @media (max-width: $tablet-pro-width) {
+        @content;
+    }
+}
+
 @mixin media-tablet {
     @media (max-width: $tablet-width) {
         @content;
