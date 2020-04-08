@@ -1,12 +1,25 @@
+.header,
+.supports,
+.why,
+.about-us,
+.gartner,
+.gartner-photo,
+.footer,
+.clients,
+.products,
+.footer {
+    .wrapper {
+        @include media-mobile {
+            padding: 0 21px;
+        }
+    }
+}
+
 .wrapper {
     max-width: $content-width;
     margin: auto;
 
-    @include media-tablet {
+    @include media-laptop {
         padding: 0 40px;
-    }
-
-    @include media-mobile {
-        padding: 0 20px;
     }
 }

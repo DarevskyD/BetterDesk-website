@@ -38,14 +38,14 @@
 
     .sign-up {
         &:hover {
-            box-shadow: 0px 2px 6px rgba(177, 177, 177, 0.6);
+            box-shadow: 0px 2px 6px $color-shadow;
         }
     }
 
     .sign-in {
         &:hover {
             border: 1px solid $color-border;
-            box-shadow: 0px 2px 6px rgba(177, 177, 177, 0.6);
+            box-shadow: 0px 2px 6px $color-shadow;
         }
     }
 
@@ -67,6 +67,10 @@
 
     @include media-mobile {        
         background-position: bottom 170px center;    
+    }
+
+    @include media-mobilesmall {        
+        background-position: bottom 210px center;    
     }
 }
 

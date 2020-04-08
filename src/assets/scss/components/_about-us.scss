@@ -11,14 +11,28 @@
 .work-container {
     padding: 0 0 81px;
 
+    >* {
+        @include media-tabletpro {
+            flex-basis: 47%;
+        }
+    }
+
     @include media-tablet {
-        flex-direction: column;
         padding: 0 0 41px;
     }
+
+    @include media-mobile {
+        flex-direction: column;
+    }
+
 }
 
 .work {
     text-align: center;
+
+    @include media-tabletpro {
+        margin: 0 0 40px;
+    }
 
     @include media-tablet {
         margin: 0 0 25px;
@@ -32,8 +46,17 @@
 .work__image {
     margin: 0 0 31px;
 
+    @include media-tabletpro {
+        width: 90%;
+    }
+
     @include media-tablet {
         margin: 0 0 20px;
+
+    }
+
+    @include media-mobile {
+        width: 90%;
     }
 }
 

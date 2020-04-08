@@ -1,16 +1,20 @@
 .clients__container {
     padding: 42px 0 40px;
 
-    @include media-tablet {
+    @include media-tablet {        
         padding: 42px 0 10px;           
+    }  
+
+    @include media-mobile {         
+        padding: 42px 0 40px;         
     }  
     
     >* {         
 
         @include media-tablet {
-            flex-basis: 48%;
+            flex-basis: 47%;
             margin: 0 0 30px;            
-        }       
+        }      
     }
 }
 

@@ -8,7 +8,8 @@
     background: $color-backgroundfirst;
     border: 1px solid $color-border;
     color: $color-light;
-    opacity: 0.5;        
+    opacity: 0.5; 
+    outline: none;       
 }
 
 .button__new {
@@ -18,6 +19,7 @@
     background: $color-todo;
     border: 1px solid $color-border-new;
     border-radius: 5px;
+    outline: none;
 
     .plus {
         background-image: url('/assets/img/icons/add.svg');

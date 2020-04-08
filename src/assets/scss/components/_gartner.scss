@@ -7,6 +7,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media-mobile {
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }
 
 .content__gartner {
@@ -41,11 +46,16 @@
     @include media-tablet {
         margin: 0 0 0 60px;
     }
+
+    @include media-mobile {
+        margin: 0;
+        padding: 40px 0 0 0;
+    }
 }
 
 .gartner-photo {
     background: url("/assets/img/gartner/woman.jpg") no-repeat;
-    background-size: cover;
+    background-size: cover;    
     background-position: center;
     height: auto;
 }
@@ -68,11 +78,16 @@
 .gartner-photo__title {
     @include font(4.0rem, 4.3rem, normal);
     @extend %font-add-italic;
+    padding: 0 20px;
     color: $color-light;
     margin: 0 0 30px;
 
     @include media-tablet {
         @include font(3.4rem, 4.0rem, normal);
+    }
+
+    @include media-mobile {
+        @include font(2.8rem, 3.4rem, normal);
     }
 }
 

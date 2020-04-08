@@ -5,12 +5,16 @@
     height: 70px;
     background: $color-todo-footer;
     padding: 15px 35px;
+
+    @include media-mobile {
+        padding: 15px;
+    }
 }
 
 .todo__line {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center;   
 }
 
 .todo__title {
@@ -28,6 +32,11 @@
     align-items: center;
     justify-content: center;
     margin: 0 0 0 10px;
+    
+    @include media-mobilesmall {
+        width: 32px;
+        border-radius: 50%;
+    }
 
     .todo__quantity {
         color: $color-light;
@@ -41,6 +50,10 @@
     padding: 28px 12px 38px 34px;
     overflow-y: scroll;
     @extend %custom-scroll;
+
+    @include media-mobile {
+        padding: 20px 12px 20px 12px;
+    }
 }
 
 .todo__container {
@@ -69,11 +82,25 @@
     @extend %font-add-regular;
     @include font(1.5rem, 2.5rem);
     font-weight: 300;
-    color: $color-add;
+    color: $color-date;
 }
 
 .task__text {
     @extend %font-add-regular;
     @include font(1.6rem, 2.2rem, normal);
     color: $color-task;
+    max-width: 400px;
+
+    @include media-tablet {
+        max-width: 500px;
+    }
+
+    @include media-mobile {
+        max-width: 250px;
+    }
+
+    @include media-mobilesmall {
+        max-width: 200px;
+    }
+
 }
