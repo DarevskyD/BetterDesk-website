@@ -39,9 +39,17 @@
 }
 
 .footer__logo-line {
-    display: flex;
-    align-items: center;
+
     margin: 0 0 15px;
+
+    .text-logo {
+        margin: 0 0 0 10px;
+    }
+   
+    >* {
+        display: flex;
+        align-items: center;        
+    }
 }
 
 .logo-content {

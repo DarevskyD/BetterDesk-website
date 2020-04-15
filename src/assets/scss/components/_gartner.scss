@@ -48,6 +48,7 @@
     }
 
     @include media-mobile {
+        width: 150px;
         margin: 0;
         padding: 40px 0 0 0;
     }

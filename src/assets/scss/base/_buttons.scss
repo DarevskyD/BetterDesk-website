@@ -11,26 +11,3 @@
     opacity: 0.5; 
     outline: none;       
 }
-
-.button__new {
-    display: flex;
-    align-items: center;
-    padding: 9px 19px;
-    background: $color-todo;
-    border: 1px solid $color-border-new;
-    border-radius: 5px;
-    outline: none;
-
-    .plus {
-        background-image: url('/assets/img/icons/add.svg');
-        width: 16px;
-        height: 16px;
-    }
-
-    .add {
-        @extend %font-add-regular;
-        @include font(1.6rem, 2.2rem, normal);
-        color: $color-light;
-        margin: 0 0 0 5px;
-    }
-}

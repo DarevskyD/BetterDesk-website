@@ -1,10 +1,16 @@
+.todo {
+    display: flex;
+    flex-direction: column;
+}
+
 .todo__footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
+    height: auto;
     background: $color-todo-footer;
-    padding: 15px 35px;
+    padding: 20px 35px;
+    border-radius: 8px 8px 0 0;
 
     @include media-mobile {
         padding: 15px;
@@ -13,94 +19,78 @@
 
 .todo__line {
     display: flex;
-    justify-content: space-between;
-    align-items: center;   
+    flex-direction: column;
 }
 
 .todo__title {
     @extend %font-add-regular;
-    @include font(2.0rem, 2.7rem, normal);
+    @include font(2.8rem, 3.5rem, normal);
     color: $color-text;
 }
 
-.todo__background {
-    width: 51px;
-    height: 32px;
-    border-radius: 40px;
-    background: $color-todo;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 0 0 10px;
-    
-    @include media-mobilesmall {
-        width: 32px;
-        border-radius: 50%;
-    }
+.todo__date {
+    color: $color-date;
+}
 
-    .todo__quantity {
-        color: $color-light;
-    }
+.fa-refresh {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
 }
 
 .todo__content {
     max-height: 391px;
     background: $color-light;
-    border-radius: 0 0 8px 8px;
-    padding: 28px 12px 38px 34px;
+    padding: 20px 15px 15px 20px;
     overflow-y: scroll;
-    @extend %custom-scroll;
+    @extend %custom-scroll;    
+}
 
-    @include media-mobile {
-        padding: 20px 12px 20px 12px;
+.list__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:last-child {
+        border-bottom: none;
     }
 }
 
-.todo__container {
+.list__content {
+    display: flex;
+}
+
+.list__text {
+    padding: 15px 20px 15px 15px;    
+}
+
+.todo__add {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 0 0 25px;
-
-    .square {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        border: 2px solid $color-todo;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+    height: 70px;
+    background: $color-todo-footer;
+    padding: 15px 35px;
+    border-radius: 0 0 8px 8px;
 }
 
-.task {
-    display: flex;
-    flex-direction: column;
+.fa-plus-circle {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
 }
 
-.task__date {
-    @extend %font-add-regular;
-    @include font(1.5rem, 2.5rem);
-    font-weight: 300;
-    color: $color-date;
+#input-todo {
+    height: 35px;
+    width: 310px;
+    border: none;
+    background-color: transparent;
+    @extend %font-prim-regular;
+    @include font(2.0rem, 2.0rem, normal);
+    margin: 0 0 0 15px;
 }
 
-.task__text {
-    @extend %font-add-regular;
-    @include font(1.6rem, 2.2rem, normal);
-    color: $color-task;
-    max-width: 400px;
-
-    @include media-tablet {
-        max-width: 500px;
-    }
-
-    @include media-mobile {
-        max-width: 250px;
-    }
-
-    @include media-mobilesmall {
-        max-width: 200px;
-    }
-
+.line-through{
+    text-decoration: line-through;
+    color : #ccc;
 }

@@ -1,43 +1,40 @@
-  %hamburger-line {
-      display: inline-block;
-      position: absolute;
-      content: "";
-      background-color: $color-light;
-      border-radius: 5px;
-      height: 3px;
-      width: 100%;
-  }
+%hamburger-line {
+    background-color: $color-light;
+    border-radius: 5px;
+    height: 3px;
+    width: 100%;
+}
 
-  .hamburger {
-      display: none;
-      position: relative;
-      width: 31px;
-      height: 25px;
-      margin: 0 37px 0 0;
+.hamburger__line {
+    @extend %hamburger-line;
+    transition: all 0.8s;
+}
 
-      @include media-tablet {
-          display: inline-block;
-      }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35px;
+    height: 30px;
+    margin: 0 37px 0 0;
 
-      @include media-mobile {
-        margin: 0 60px 0 0;
+    @include media-tablet {
+        display: flex;
     }
 
-      &:before {
-          @extend %hamburger-line;
-          top: 0;
-          left: 0;
-      }
+    @include media-mobile {
+        margin: 0 60px 0 0;
+    }
+}
 
-      &:after {
-          @extend %hamburger-line;
-          bottom: 0;
-          left: 0;
-      }
-  }
+.change .line-1 {
+    transform: rotateZ(-405deg) translate(-8px, 6px);
+}
 
-  .hamburger__line {
-      @extend %hamburger-line;
-      top: calc(50%-1.5px);
-      left: 0;
-  }
+.change .line-2 {
+    opacity: 0;
+}
+
+.change .line-3 {
+    transform: rotateZ(405deg) translate(-8px, -6px);
+}
