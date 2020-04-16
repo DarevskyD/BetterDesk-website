@@ -1,96 +1,130 @@
 .todo {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .todo__footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: auto;
-    background: $color-todo-footer;
-    padding: 20px 35px;
-    border-radius: 8px 8px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: auto;
+  background: $color-todo-footer;
+  padding: 20px 35px;
+  border-radius: 8px 8px 0 0;
 
-    @include media-mobile {
-        padding: 15px;
-    }
+  @include media-mobile {
+    padding: 15px;
+  }
 }
 
 .todo__line {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .todo__title {
-    @extend %font-add-regular;
-    @include font(2.8rem, 3.5rem, normal);
-    color: $color-text;
+  @extend %font-add-regular;
+  @include font(2.8rem, 3.5rem, normal);
+  color: $color-text;
 }
 
 .todo__date {
-    color: $color-date;
+  color: $color-date;
 }
-
-.fa-refresh {
+.todo__clear {
+  .fa-refresh {
     width: 30px;
     height: 30px;
     cursor: pointer;
+  }
 }
 
 .todo__content {
-    max-height: 391px;
-    background: $color-light;
-    padding: 20px 15px 15px 20px;
-    overflow-y: scroll;
-    @extend %custom-scroll;    
+  max-height: 391px;
+  background: $color-light;
+  padding: 20px 15px 15px 20px;
+  overflow-y: scroll;
+  @extend %custom-scroll;
 }
 
 .list__items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;    
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 
-    &:last-child {
-        border-bottom: none;
-    }
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .list__content {
+  display: flex;
+
+  .circle {
     display: flex;
+    align-items: center;
+    > * {
+      cursor: pointer;
+    }
+  }
+}
+
+.circle-thin {
+  width: 20px;
+  height: 20px;
+  border: 2px solid $color-text;
+  border-radius: 50%;  
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around; 
+}
+
+.circle-change {
+  border-color: #6EB200;
+  background-color: #6EB200;
+  @extend %transition;
+}
+
+.line-through {
+  text-decoration: line-through;
+  color: #ccc;
+}
+
+.fa-trash {
+  cursor: pointer;
 }
 
 .list__text {
-    padding: 15px 20px 15px 15px;    
+  padding: 15px 20px 15px 15px;
 }
 
 .todo__add {
-    display: flex;
-    align-items: center;
-    height: 70px;
-    background: $color-todo-footer;
-    padding: 15px 35px;
-    border-radius: 0 0 8px 8px;
-}
+  display: flex;
+  align-items: center;
+  height: 70px;
+  background: $color-todo-footer;
+  padding: 0 35px;
+  border-radius: 0 0 8px 8px;  
 
-.fa-plus-circle {
+  .fa-plus-circle {
     width: 45px;
     height: 45px;
     cursor: pointer;
+    vertical-align: middle;
+  }
 }
 
 #input-todo {
-    height: 35px;
-    width: 310px;
-    border: none;
-    background-color: transparent;
-    @extend %font-prim-regular;
-    @include font(2.0rem, 2.0rem, normal);
-    margin: 0 0 0 15px;
+  height: 45px;
+  width: 310px;
+  border: none;
+  background-color: transparent;
+  @extend %font-prim-regular;
+  @include font(2rem, 2rem, normal);
+  margin: 0 0 0 15px;
+  padding: 0 0 0 15px;
+
+  
 }
 
-.line-through{
-    text-decoration: line-through;
-    color : #ccc;
-}
