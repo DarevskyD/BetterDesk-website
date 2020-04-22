@@ -4,9 +4,10 @@ window.addEventListener("DOMContentLoaded", function () {
 
     "use strict";
 
-    let sidebar = require('./js/sidebar.js');
-
+    let sidebar = require('./js/sidebar'),
+        todo = require('./js/todo');
 
     sidebar();
+    todo();
 
 });

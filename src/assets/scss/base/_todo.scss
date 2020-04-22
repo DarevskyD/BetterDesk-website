@@ -1,6 +1,6 @@
 .todo {
   display: flex;
-  flex-direction: column;
+  flex-direction: column;   
 }
 
 .todo__footer {
@@ -31,16 +31,23 @@
 .todo__date {
   color: $color-date;
 }
+
 .todo__clear {
-  .fa-refresh {
-    width: 30px;
-    height: 30px;
+  .refresh {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
+    @extend %transition;
   }
 }
 
+.refresh-transform {
+  transform: rotate(360deg);
+}
+
 .todo__content {
-  max-height: 391px;
+  max-height: 300px;
+  min-height: 200px;
   background: $color-light;
   padding: 20px 15px 15px 20px;
   overflow-y: scroll;
@@ -56,33 +63,32 @@
   &:last-child {
     border-bottom: none;
   }
-}
-
-.list__content {
-  display: flex;
-
-  .circle {
-    display: flex;
-    align-items: center;
-    > * {
-      cursor: pointer;
-    }
+  
+  .text-block {
+    width: 100%;
   }
 }
 
-.circle-thin {
-  width: 20px;
-  height: 20px;
+.circle__circle-thin {
+  width: 24px;
+  height: 24px;
   border: 2px solid $color-text;
-  border-radius: 50%;  
+  border-radius: 50%;
+  cursor: pointer;
   display: inline-flex;
   align-items: center;
-  justify-content: space-around; 
+  justify-content: space-around;
 }
 
 .circle-change {
-  border-color: #6EB200;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid #6EB200;
   background-color: #6EB200;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
   @extend %transition;
 }
 
@@ -91,12 +97,18 @@
   color: #ccc;
 }
 
-.fa-trash {
-  cursor: pointer;
+.list__text {
+  padding: 10px 20px 10px 15px;
 }
 
-.list__text {
-  padding: 15px 20px 15px 15px;
+.trash {
+  cursor: pointer;
+  border-radius: 50%;
+  @extend %transition;
+
+  &:hover {
+    transform: scale(1.15);
+  }
 }
 
 .todo__add {
@@ -105,9 +117,13 @@
   height: 70px;
   background: $color-todo-footer;
   padding: 0 35px;
-  border-radius: 0 0 8px 8px;  
+  border-radius: 0 0 8px 8px;
 
-  .fa-plus-circle {
+  @include media-mobile {
+    padding: 0 15px;
+  }
+
+  .plus-circle {
     width: 45px;
     height: 45px;
     cursor: pointer;
@@ -117,14 +133,11 @@
 
 #input-todo {
   height: 45px;
-  width: 310px;
+  width: 70%;
   border: none;
   background-color: transparent;
   @extend %font-prim-regular;
   @include font(2rem, 2rem, normal);
   margin: 0 0 0 15px;
   padding: 0 0 0 15px;
-
-  
 }
-

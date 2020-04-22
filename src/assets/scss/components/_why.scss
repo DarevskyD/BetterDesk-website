@@ -30,11 +30,10 @@
 }
 
 .why__container {
-    padding: 0 0 90px;
+    padding: 0 0 90px;    
 
     @include media-tablet {
-        padding: 0 0 50px;
-        display: flex;
+        padding: 0 0 50px;        
         flex-direction: column;
     }
 }
