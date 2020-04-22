@@ -7,13 +7,18 @@
     @extend %transition;
 }
 
-.logo-svg {
-    
+.logo-svg {    
     cursor: pointer;
 
     &:hover {
         .logo-path {
             fill: $color-backgroundfirst;
+        }       
+    }
+
+    &:hover {
+        .logo-rect {
+            fill: #6a708d;
         }       
     }
 }
