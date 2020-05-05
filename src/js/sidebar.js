@@ -12,13 +12,13 @@ function sidebar() {
             sideBar.classList.toggle('change');
             menuIconHeaderFixed.classList.toggle('change');
             overlayBody.classList.add('overlay-body');
-            document.body.classList.add('scroll-body');
+            document.body.classList.add('scroll-body');           
         });
     }
 
     function closeSidebar() {
-        menuIconSidebarHamburger.addEventListener('click', () => {
-            close();
+        menuIconSidebarHamburger.addEventListener('click', () => {                       
+            close();            
         });
 
         sideBar.addEventListener('click', (event) => {

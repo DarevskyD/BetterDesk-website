@@ -1,373 +1,374 @@
 <!DOCTYPE html>
-<div lang="en">
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Better Desk</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Better Desk</title>
+  <link rel="shortcut icon" type="image/ico" href="static/favicon.ico">
+</head>
 
-  <body>
-    <header class="header id=" home">
-      <div class="header__fixed">
-        <div class="wrapper header__wrapper">
-          <div class="header__logo-line">
-            <div class="header__hamburger hamburger">
-              <div class="hamburger__line line-1"></div>
-              <div class="hamburger__line line-2"></div>
-              <div class="hamburger__line line-3"></div>
-            </div>
-            <a href="#" class="logo">
-              <object data="assets/img/logo.svg" type="image/svg+xml" class="logo-object"></object>
-            </a>
-            <p class="text-logo">BetterDesk</p>
+<body>
+  <header class="header" id="home">
+    <div class="header__fixed">
+      <div class="wrapper header__wrapper">
+        <div class="header__logo-line">
+          <div class="header__hamburger hamburger">
+            <div class="hamburger__line line-1"></div>
+            <div class="hamburger__line line-2"></div>
+            <div class="hamburger__line line-3"></div>
           </div>
-          <div class="header__navigation">
-            <nav class="navigation">
-              <ul class="navigation__links">
-                <li class="navigation__link"><a href="#home">Home</a></li>
-                <li class="navigation__link"><a href="#products">Products</a></li>
-                <li class="navigation__link"><a href="#why">Demo</a></li>
-                <li class="navigation__link"><a href="#supports">Resources</a></li>
-              </ul>
-            </nav>
-            <div class="header__buttons">
-              <button class="button sign-in">Sign In</button>
-              <button class="button sign-up">Sign Up</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <section class="header__promo">
-        <div class="wrapper promo__wrapper">
-          <div class="promo__content">
-            <h1 class="promo__title">Build a
-              company your
-              customers love.</h1>
-          </div>
-          <div class="promo__form">
-            <form action method="POST">
-              <div class="email__line email__promo">
-                <input type="email" name="email" placeholder="Enter your email">
-              </div>
-              <div class="email__button">
-                <button type="submit" class="button-form button-promo">Sign Up</button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <div class="header__logos">
-          <div class="wrapper logos__wrapper">
-            <div class="logos__images">
-              <img class="logos__image" src="assets/img/logos/logo1.png" alt="logo-1" />
-              <img class="logos__image" src="assets/img/logos/logo2.png" alt="logo-2" />
-              <img class="logos__image" src="assets/img/logos/logo3.png" alt="logo-3" />
-              <img class="logos__image" src="assets/img/logos/logo4.png" alt="logo-4" />
-              <img class="logos__image" src="assets/img/logos/logo5.png" alt="logo-5" />
-            </div>
-          </div>
-        </div>
-      </section>
-    </header>
-    <section class="supports" id="supports">
-      <div class="wrapper">
-        <div class="supports__container">
-          <h3 class="supports__title">Let’s make customer support interaction
-            <span class="supports__title-bold">more human</span> & <span class="supports__title-bold">more
-              reliable.</span>
-          </h3>
-          <div class="support__block layout-3-column">
-            <div class="support">
-              <div class="support__icon">
-                <span class="icon-square icon-square_blue">
-                  <span class="ico ico_phone"></span>
-                </span>
-              </div>
-              <h4 class="support__title">Support</h4>
-              <p class="support__text">Vestibulum rutrum quam vitae fringilla tincid.</p>
-              <a href="#" class="support-link">
-                <span class="link__text">Learn More</span>
-                <span class="ico ico_arrow"></span>
-              </a>
-            </div>
-            <div class="support">
-              <div class="support__icon">
-                <span class="icon-square icon-square_violet">
-                  <span class="ico ico_help"></span>
-                </span>
-              </div>
-              <h4 class="support__title">Help Desk</h4>
-              <p class="support__text">Cras quis nulla commodo, aliquam lectus sed.</p>
-              <a href="#" class="support-link">
-                <span class="link__text">Learn More</span>
-                <span class="ico ico_arrow"></span>
-              </a>
-            </div>
-            <div class="support">
-              <div class="support__icon">
-                <span class="icon-square icon-square_pink">
-                  <span class="ico ico_chat"></span>
-                </span>
-              </div>
-              <h4 class="support__title">Chat</h4>
-              <p class="support__text">Fusce vehicula dolor arcu, sit amet blandit dolor.</p>
-              <a href="#" class="support-link">
-                <span class="link__text">Learn More</span>
-                <span class="ico ico_arrow"></span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="why" id="why">
-      <div class="wrapper why__wrapper">
-        <h2 class="why__title">Why BetterDesk</h2>
-        <p class="why__text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
-          lacus,
-          vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
-          ligula. Maecenas eu varius risus, eu aliquet arcu. </p>
-        <div class="why__container layout-2-column">
-          <div class="block">
-            <div class="block__support">
-              <h4 class="block__title">Support for growing business</h4>
-              <p class="block__text">
-                Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec
-                pharetra
-                id, tempor a tortor. Pellentesque non dignissim neque. Ut porta.
-              </p>
-            </div>
-            <p class="grow__text">1 billion interactions per year</p>
-            <p class="grow__text">Minimal effort</p>
-            <p class="grow__text">Maximum knowledge</p>
-          </div>
-
-          <div class="todo">
-            <div class="todo__footer">
-              <div class="todo__line">
-                <div class="todo__title">To Do List</div>
-                <div class="todo__date">Thursday, Feb 14</div>
-              </div>
-              <div class="todo__clear">
-                <img class="refresh" src="assets/img/icons/sync.svg" alt="clear" />
-              </div>
-            </div>
-            <div class="todo__content">
-              <ul class="list"></ul>
-            </div>
-            <div class="todo__add">
-              <label for="input-todo"><img class="plus-circle" src="assets/img/icons/plus-oval.svg"
-                  alt="plus-oval" /></label>
-              <input type="text" id="input-todo" placeholder="Add a to-do">
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="about-us">
-      <div class="wrapper">
-        <h2 class="about-us__title">Learn More About Us</h2>
-        <div class="work-container layout-3-column">
-          <div class="work">
-            <img class="work__image" src="assets/img/about-us/about-1.jpg" alt="about-1" />
-            <p class="work__content">Vestibulum rutrum quam vitae fringilla.</p>
-            <a href="#" class="work-link">
-              <span class="link__text">Learn More</span>
-              <span class="ico ico_arrow"></span>
-            </a>
-          </div>
-          <div class="work">
-            <img class="work__image" src="assets/img/about-us/about-2.jpg" alt="about-2" />
-            <p class="work__content">Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
-            <a href="#" class="work-link">
-              <span class="link__text">Learn More</span>
-              <span class="ico ico_arrow"></span>
-            </a>
-          </div>
-          <div class="work">
-            <img class="work__image" src="assets/img/about-us/about-3.jpg" alt="about-3" />
-            <p class="work__content">Fusce vehicula dolor arcu, sit amet blan.</p>
-            <a href="#" class="work-link">
-              <span class="link__text">Learn More</span>
-              <span class="ico ico_arrow"></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="gartner">
-      <div class="wrapper wrapper__gartner">
-        <div class="content__gartner">
-          <p class="gartner__text"><span class="gartner__text-bold">BetterDesk</span>is recognized as top Unified
-            Communications provider in 2016 Magic Quandrant</p>
-          <a href="#" class="gartner-link">
-            <span class="link__text">Read Report</span>
+          <a href="#" class="logo">
+            <object data="assets/img/logo.svg" type="image/svg+xml" class="logo-object"></object>
           </a>
+          <p class="text-logo">BetterDesk</p>
         </div>
-        <img class="gartner__image" src="assets/img/gartner/gartner-logo.svg" alt="gartner-logo" />
-      </div>
-    </section>
-    <section class="gartner-photo">
-      <div class="gartner-photo__wrapper">
-        <div class="gartner-photo__container">
-          <p class="gartner-photo__title">“When BetterDesk was introduced, our business grows a lot — Strongly
-            recommend.”
-          </p>
-          <p class="gartner-photo__name">Sharon Herrera at Buffer</p>
-          <a href="#" class="block-play">
-            <span class="ico ico_play"></span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="clients">
-      <div class="wrapper">
-        <div class="clients__container layout-4-column">
-          <div class="client">
-            <div class="client__photo">
-              <a href="#">
-                <img class="triangle" src="assets/img/icons/triangle.svg" alt="triangle" />
-                <img class="client__image" src="assets/img/clients/photo1.png" alt="Sharon Herrera" />
-              </a>
-            </div>
-            <div class="client__content">
-              <p class="client__name">Sharon Herrera</p>
-              <img class="client__logo" src="assets/img/clients/client-logo1.png" alt="client-logo1" />
-            </div>
-          </div>
-          <div class="client">
-            <div class="client__photo">
-              <a href="#">
-                <img class="triangle" src="assets/img/icons/triangle.svg" alt="triangle" />
-                <img class="client__image" src="assets/img/clients/photo2.png" alt="Diana Moreno" />
-              </a>
-            </div>
-            <div class="client__content">
-              <p class="client__name">Diana Moreno</p>
-              <img class="client__logo" src="assets/img/clients/client-logo2.png" alt="client-logo2" />
-            </div>
-          </div>
-          <div class="client">
-            <div class="client__photo">
-              <a href="#">
-                <img class="triangle" src="assets/img/icons/triangle.svg" alt="triangle" />
-                <img class="client__image" src="assets/img/clients/photo3.png" alt="Diane Tran" />
-              </a>
-            </div>
-            <div class="client__content">
-              <p class="client__name">Diane Tran</p>
-              <img class="client__logo" src="assets/img/clients/client-logo3.png" alt="client-logo3" />
-            </div>
-          </div>
-          <div class="client">
-            <div class="client__photo">
-              <a href="#">
-                <img class="triangle" src="assets/img/icons/triangle.svg" alt="triangle" />
-                <img class="client__image" src="assets/img/clients/photo4.png" alt="Julia Wilson" />
-              </a>
-            </div>
-            <div class="client__content">
-              <p class="client__name">Julia Wilson</p>
-              <img class="client__logo" src="assets/img/clients/client-logo4.png" alt="client-logo4" />
-            </div>
+        <div class="header__navigation">
+          <nav class="navigation">
+            <ul class="navigation__links">
+              <li class="navigation__link"><a href="#home">Home</a></li>
+              <li class="navigation__link"><a href="#products">Products</a></li>
+              <li class="navigation__link"><a href="#why">Demo</a></li>
+              <li class="navigation__link"><a href="#supports">Resources</a></li>
+            </ul>
+          </nav>
+          <div class="header__buttons">
+            <button class="button sign-in">Sign In</button>
+            <button class="button sign-up">Sign Up</button>
           </div>
         </div>
       </div>
-    </section>
-    <section class="products" id="products">
-      <div class="wrapper wrapper__products">
-        <h2 class="title__products">Great Products Deliver Happiness to Users</h2>
-        <div class="product__form">
+    </div>
+    <section class="header__promo">
+      <div class="wrapper promo__wrapper">
+        <div class="promo__content">
+          <h1 class="promo__title">Build a
+            company your
+            customers love.</h1>
+        </div>
+        <div class="promo__form">
           <form action method="POST">
-            <div class="email__line email__product">
+            <div class="email__line email__promo">
               <input type="email" name="email" placeholder="Enter your email">
             </div>
             <div class="email__button">
-              <button type="submit" class="button-form button-product">Sign Up</button>
+              <button type="submit" class="button-form button-promo">Sign Up</button>
             </div>
           </form>
         </div>
       </div>
-    </section>
-    <footer class="footer">
-      <div class="wrapper footer__wrapper">
-        <div class="footer__container">
-          <div class="footer__logo">
-            <div class="footer__logo-line">
-              <a href="#" class="logo">
-                <object data="assets/img/logo.svg" type="image/svg+xml" class="logo-object"></object>
-                <p class="text-logo">BetterDesk</p>
-              </a>
-            </div>
-            <p class="logo-content">This template is created by &#64iamjoannajiang. UX Designer </p>
-            <a href="#" class="logo-link">&#64 www.betterdesign.io</a>
+      <div class="header__logos">
+        <div class="wrapper logos__wrapper">
+          <div class="logos__images">
+            <img class="logos__image" src="assets/img/logos/logo1.png" alt="logo-1" />
+            <img class="logos__image" src="assets/img/logos/logo2.png" alt="logo-2" />
+            <img class="logos__image" src="assets/img/logos/logo3.png" alt="logo-3" />
+            <img class="logos__image" src="assets/img/logos/logo4.png" alt="logo-4" />
+            <img class="logos__image" src="assets/img/logos/logo5.png" alt="logo-5" />
           </div>
-          <div class="footer-navigation layout-3-column">
-            <div class="footer-navigation__column">
-              <h4 class="footer-navigation__title">ABOUT</h4>
-              <ul class="footer-navigation__links">
-                <li><a href="#">Our Mission</a></li>
-                <li><a href="#">Company</a></li>
-                <li><a href="#">Jobs</a></li>
-                <li><a href="#">Blog</a></li>
-              </ul>
-            </div>
-            <div class="footer-navigation__column">
-              <h4 class="footer-navigation__title">SUPPORT</h4>
-              <ul class="footer-navigation__links">
-                <li><a href="#">FAQ</a></li>
-                <li><a href="#">Help Center</a></li>
-                <li><a href="#">Terms of Service</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-              </ul>
-            </div>
-            <div class="footer-navigation__column">
-              <h4 class="footer-navigation__title">CONTACT</h4>
-              <ul class="footer-navigation__links">
-                <li><a href="#">Email Us</a></li>
-                <li><a href="#">Live Chat</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="foter__social">
-          <a href="#">
-            <img src="/assets/img/icons/social.svg" alt="social-icons">
-          </a>
         </div>
       </div>
-    </footer>
-    <div class="overlay"></div>
-    <div class="sidebar">
-      <div class="sidebar__container">
-        <div class="sidebar__header">
-          <div class="header__logo-line">
-            <div class="header__hamburger hamburger">
-              <div class="hamburger__line line-1"></div>
-              <div class="hamburger__line line-2"></div>
-              <div class="hamburger__line line-3"></div>
+    </section>
+  </header>
+  <section class="supports" id="supports">
+    <div class="wrapper">
+      <div class="supports__container">
+        <h3 class="supports__title">Let’s make customer support interaction
+          <span class="supports__title-bold">more human</span> & <span class="supports__title-bold">more
+            reliable.</span>
+        </h3>
+        <div class="support__block layout-3-column">
+          <div class="support">
+            <div class="support__icon">
+              <span class="icon-square icon-square_blue">
+                <span class="ico ico_phone"></span>
+              </span>
             </div>
-            <a href="#" class="logo">
-              <object data="assets/img/logo.svg" type="image/svg+xml" class="logo-object"></object>
+            <h4 class="support__title">Support</h4>
+            <p class="support__text">Vestibulum rutrum quam vitae fringilla tincid.</p>
+            <a href="#" class="support-link">
+              <span class="link__text">Learn More</span>
+              <span class="ico ico_arrow"></span>
             </a>
-            <p class="text-logo">BetterDesk</p>
           </div>
-        </div>
-        <nav class="sidebar__navigation">
-          <ul class="navigation__links">
-            <li class="navigation__link"><a class="sidebar__link" href="#home">Home</a></li>
-            <li class="navigation__link"><a class="sidebar__link" href="#products">Products</a></li>
-            <li class="navigation__link"><a class="sidebar__link" href="#why">Demo</a></li>
-            <li class="navigation__link"><a class="sidebar__link" href="#supports">Resources</a></li>
-          </ul>
-        </nav>
-        <div class="sidebar__buttons">
-          <button class="button sign-in">Sign In</button>
-          <button class="button sign-up">Sign Up</button>
+          <div class="support">
+            <div class="support__icon">
+              <span class="icon-square icon-square_violet">
+                <span class="ico ico_help"></span>
+              </span>
+            </div>
+            <h4 class="support__title">Help Desk</h4>
+            <p class="support__text">Cras quis nulla commodo, aliquam lectus sed.</p>
+            <a href="#" class="support-link">
+              <span class="link__text">Learn More</span>
+              <span class="ico ico_arrow"></span>
+            </a>
+          </div>
+          <div class="support">
+            <div class="support__icon">
+              <span class="icon-square icon-square_pink">
+                <span class="ico ico_chat"></span>
+              </span>
+            </div>
+            <h4 class="support__title">Chat</h4>
+            <p class="support__text">Fusce vehicula dolor arcu, sit amet blandit dolor.</p>
+            <a href="#" class="support-link">
+              <span class="link__text">Learn More</span>
+              <span class="ico ico_arrow"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </body>
+  </section>
+  <section class="why" id="why">
+    <div class="wrapper why__wrapper">
+      <h2 class="why__title">Why BetterDesk</h2>
+      <p class="why__text">Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend
+        lacus,
+        vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque
+        ligula. Maecenas eu varius risus, eu aliquet arcu. </p>
+      <div class="why__container layout-2-column">
+        <div class="block">
+          <div class="block__support">
+            <h4 class="block__title">Support for growing business</h4>
+            <p class="block__text">
+              Donec facilisis tortor ut augue lacinia, at viverra est semper. Sed sapien metus, scelerisque nec
+              pharetra
+              id, tempor a tortor. Pellentesque non dignissim neque. Ut porta.
+            </p>
+          </div>
+          <p class="grow__text">1 billion interactions per year</p>
+          <p class="grow__text">Minimal effort</p>
+          <p class="grow__text">Maximum knowledge</p>
+        </div>
 
-  </html>
+        <div class="todo">
+          <div class="todo__footer">
+            <div class="todo__line">
+              <div class="todo__title">To Do List</div>
+              <div class="todo__date">Thursday, Feb 14</div>
+            </div>
+            <div class="todo__clear">
+              <img class="refresh" src="assets/img/icons/sync.svg" alt="clear" />
+            </div>
+          </div>
+          <div class="todo__content">
+            <ul class="list"></ul>
+          </div>
+          <div class="todo__add">
+            <label for="input-todo"><img class="plus-circle" src="assets/img/icons/plus-oval.svg"
+                alt="plus-oval" /></label>
+            <input type="text" id="input-todo" placeholder="Add a to-do">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-us">
+    <div class="wrapper">
+      <h2 class="about-us__title">Learn More About Us</h2>
+      <div class="work-container layout-3-column">
+        <div class="work">
+          <img class="work__image" src="assets/img/about-us/about-1.jpg" alt="about-1" />
+          <p class="work__content">Vestibulum rutrum quam vitae fringilla.</p>
+          <a href="#" class="work-link">
+            <span class="link__text">Learn More</span>
+            <span class="ico ico_arrow"></span>
+          </a>
+        </div>
+        <div class="work">
+          <img class="work__image" src="assets/img/about-us/about-2.jpg" alt="about-2" />
+          <p class="work__content">Lorem ipsum dolor sit amet, consectetur adipiscin.</p>
+          <a href="#" class="work-link">
+            <span class="link__text">Learn More</span>
+            <span class="ico ico_arrow"></span>
+          </a>
+        </div>
+        <div class="work">
+          <img class="work__image" src="assets/img/about-us/about-3.jpg" alt="about-3" />
+          <p class="work__content">Fusce vehicula dolor arcu, sit amet blan.</p>
+          <a href="#" class="work-link">
+            <span class="link__text">Learn More</span>
+            <span class="ico ico_arrow"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="gartner">
+    <div class="wrapper wrapper__gartner">
+      <div class="content__gartner">
+        <p class="gartner__text"><span class="gartner__text-bold">BetterDesk</span>is recognized as top Unified
+          Communications provider in 2016 Magic Quandrant</p>
+        <a href="#" class="gartner-link">
+          <span class="link__text">Read Report</span>
+        </a>
+      </div>
+      <img class="gartner__image" src="assets/img/gartner/gartner-logo.svg" alt="gartner-logo" />
+    </div>
+  </section>
+  <section class="gartner-photo">
+    <div class="gartner-photo__wrapper">
+      <div class="gartner-photo__container">
+        <p class="gartner-photo__title">“When BetterDesk was introduced, our business grows a lot — Strongly
+          recommend.”
+        </p>
+        <p class="gartner-photo__name">Sharon Herrera at Buffer</p>
+        <a href="#" class="block-play">
+          <span class="ico ico_play"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="clients">
+    <div class="wrapper">
+      <div class="clients__container layout-4-column">
+        <div class="client">
+          <div class="client__photo">
+            <a href="#">
+              <img class="triangle" src="assets/img/icons/triangle.svg" alt="triangle" />
+              <img class="client__image" src="assets/img/clients/photo1.png" alt="Sharon Herrera" />
+            </a>
+          </div>
+          <div class="client__content">
+            <p class="client__name">Sharon Herrera</p>
+            <img class="client__logo" src="assets/img/clients/client-logo1.png" alt="client-logo1" />
+          </div>
+        </div>
+        <div class="client">
+          <div class="client__photo">
+            <a href="#">
+              <img class="triangle" src="assets/img/icons/triangle.svg" alt="triangle" />
+              <img class="client__image" src="assets/img/clients/photo2.png" alt="Diana Moreno" />
+            </a>
+          </div>
+          <div class="client__content">
+            <p class="client__name">Diana Moreno</p>
+            <img class="client__logo" src="assets/img/clients/client-logo2.png" alt="client-logo2" />
+          </div>
+        </div>
+        <div class="client">
+          <div class="client__photo">
+            <a href="#">
+              <img class="triangle" src="assets/img/icons/triangle.svg" alt="triangle" />
+              <img class="client__image" src="assets/img/clients/photo3.png" alt="Diane Tran" />
+            </a>
+          </div>
+          <div class="client__content">
+            <p class="client__name">Diane Tran</p>
+            <img class="client__logo" src="assets/img/clients/client-logo3.png" alt="client-logo3" />
+          </div>
+        </div>
+        <div class="client">
+          <div class="client__photo">
+            <a href="#">
+              <img class="triangle" src="assets/img/icons/triangle.svg" alt="triangle" />
+              <img class="client__image" src="assets/img/clients/photo4.png" alt="Julia Wilson" />
+            </a>
+          </div>
+          <div class="client__content">
+            <p class="client__name">Julia Wilson</p>
+            <img class="client__logo" src="assets/img/clients/client-logo4.png" alt="client-logo4" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="products" id="products">
+    <div class="wrapper wrapper__products">
+      <h2 class="title__products">Great Products Deliver Happiness to Users</h2>
+      <div class="product__form">
+        <form action method="POST">
+          <div class="email__line email__product">
+            <input type="email" name="email" placeholder="Enter your email">
+          </div>
+          <div class="email__button">
+            <button type="submit" class="button-form button-product">Sign Up</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="wrapper footer__wrapper">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <div class="footer__logo-line">
+            <a href="#" class="logo">
+              <object data="assets/img/logo.svg" type="image/svg+xml" class="logo-object"></object>
+              <p class="text-logo">BetterDesk</p>
+            </a>
+          </div>
+          <p class="logo-content">This template is created by &#64iamjoannajiang. UX Designer </p>
+          <a href="#" class="logo-link">&#64 www.betterdesign.io</a>
+        </div>
+        <div class="footer-navigation layout-3-column">
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">ABOUT</h4>
+            <ul class="footer-navigation__links">
+              <li><a href="#">Our Mission</a></li>
+              <li><a href="#">Company</a></li>
+              <li><a href="#">Jobs</a></li>
+              <li><a href="#">Blog</a></li>
+            </ul>
+          </div>
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">SUPPORT</h4>
+            <ul class="footer-navigation__links">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Help Center</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="footer-navigation__column">
+            <h4 class="footer-navigation__title">CONTACT</h4>
+            <ul class="footer-navigation__links">
+              <li><a href="#">Email Us</a></li>
+              <li><a href="#">Live Chat</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="foter__social">
+        <a href="#">
+          <img src="/assets/img/icons/social.svg" alt="social-icons">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <div class="overlay"></div>
+  <div class="sidebar">
+    <div class="sidebar__container">
+      <div class="sidebar__header">
+        <div class="header__logo-line">
+          <div class="header__hamburger hamburger">
+            <div class="hamburger__line line-1"></div>
+            <div class="hamburger__line line-2"></div>
+            <div class="hamburger__line line-3"></div>
+          </div>
+          <a href="#" class="logo">
+            <object data="assets/img/logo.svg" type="image/svg+xml" class="logo-object"></object>
+          </a>
+          <p class="text-logo">BetterDesk</p>
+        </div>
+      </div>
+      <nav class="sidebar__navigation">
+        <ul class="navigation__links">
+          <li class="navigation__link"><a class="sidebar__link" href="#home">Home</a></li>
+          <li class="navigation__link"><a class="sidebar__link" href="#products">Products</a></li>
+          <li class="navigation__link"><a class="sidebar__link" href="#why">Demo</a></li>
+          <li class="navigation__link"><a class="sidebar__link" href="#supports">Resources</a></li>
+        </ul>
+      </nav>
+      <div class="sidebar__buttons">
+        <button class="button sign-in">Sign In</button>
+        <button class="button sign-up">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

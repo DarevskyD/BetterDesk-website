@@ -1,5 +1,5 @@
 function todo() {
-  const clear = document.querySelector(" .todo__clear"),
+  const clear = document.querySelector(".todo__clear"),
     date = document.querySelector(".todo__date"),
     list = document.querySelector(".list"),
     input = document.getElementById("input-todo"),
