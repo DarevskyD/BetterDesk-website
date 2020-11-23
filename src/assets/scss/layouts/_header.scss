@@ -67,25 +67,6 @@
     }
 }
 
-.header__promo {
-    background-image: url('/assets/img/header/Illustration.png');
-    background-repeat: no-repeat;
-    background-position: right bottom;
-
-    @include media-tablet {
-        background-size: 85%;
-        background-position: right -150px bottom 40px;
-    }
-
-    @include media-mobile {
-        background-position: bottom 170px center;
-    }
-
-    @include media-mobilesmall {
-        background-position: bottom 210px center;
-    }
-}
-
 .header__logos {
     background: $color-backgroundlogos;
     border: 1px solid $color-borderlog;
