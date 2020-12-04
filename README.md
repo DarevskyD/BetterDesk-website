@@ -1,4 +1,4 @@
-# BetterDesk-site
+# BetterDesk-website
 ## Project setup
 ```
 npm install
